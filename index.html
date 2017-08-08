@@ -1,0 +1,200 @@
+<!doctype html>
+<html id="visdown" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Visdown - Markdown for Visualisation</title>
+    <meta name="description" content="Create Simple Visualisation Charts with Markdown">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="lib/vega.min.js"></script>
+    <script src="lib/vega-lite.min.js"></script>
+    <script src="lib/vega-embed.min.js"></script>
+    <script src="lib/marked.min.js"></script>
+    <script src="lib/yaml.min.js"></script>
+
+    <style>
+      #visdown-output {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      #visdown-input {
+        display: none;
+      }
+    </style>
+
+</head>
+<body>
+
+<div id="visdown-input">
+  # Classic rock
+
+
+  ```vis
+  width: 600
+  height: 400
+  data:
+    url: data/data.csv
+
+  selection:
+    mouHov:
+     type: multi
+     'on': mouseover
+  mark: bar
+  encoding:
+    x:
+
+      type: nominal
+      field: Release Year
+    y:
+      type: quantitative
+      field: PlayCount
+    color:
+      field: PlayCount
+      type: quantitative
+    tooltip:
+        field: PlayCount
+        type: quantitative
+  config:
+    axis:
+      grid: false
+  ```
+
+  ```vis
+  width: 600
+  height: 400
+  data:
+    url: data/list2.csv
+  selection:
+    grid:
+      type: interval
+      bind: scales
+  mark: circle
+  encoding:
+    x:
+      type: quantitative
+      field: Percentage of Plays
+      scale:
+
+
+
+
+    y:
+      type: nominal
+      field: Artist
+      scale:
+
+
+    size:
+      field: Percentage of Plays
+      type: quantitative
+    tooltip:
+      field: Artist
+      type: nominal
+
+
+
+
+  ```
+
+  ```vis
+  width: 600
+  height: 400
+  data:
+    url: data/list2.csv
+
+  mark: circle
+  encoding:
+    x:
+      type: quantitative
+      field: Percentage of Plays
+      scale:
+
+
+
+
+    y:
+      type: nominal
+      field: Artist
+      scale:
+
+
+    size:
+      field: Percentage of Plays
+      type: quantitative
+    tooltip:
+      field: Artist
+      type: nominal
+
+
+
+
+  ```
+
+  ```vis
+  width: 600
+  height: 400
+  data:
+    url: data/list1.csv
+
+  mark: bar
+  encoding:
+    x:
+      type: quantitative
+      field: Play Count
+      scale:
+        rangeStep: 1
+
+
+    y:
+      type: ordinal
+      field: Song
+      sort: descending
+    color:
+      type: Ordinal
+      field: Play Count
+    tooltip:
+      type: quantitative
+      field: Play Count
+
+
+  ```
+
+
+  ```vis
+    width: 600
+    height: 400
+    data:
+      url: data/zone.csv
+
+    mark: circle
+    encoding:
+      x:
+        type: nominal
+        field: artist
+
+      y:
+        type: nominal
+        field: cities
+
+      size:
+        field: played
+        type: quantitative
+      color:
+        type: ordinal
+        field: zone
+      tooltip:
+        type: nominal
+        field: artist
+
+
+
+
+  ```
+</div>
+<div id="visdown-output"></div>
+
+<script src="visdown.js"></script>
+
+</body>
+</html>

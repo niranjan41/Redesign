@@ -1,0 +1,21 @@
+cities,province,artist,played,zone
+Los Angeles,CA,Pearl Jam,4.9,West
+Seattle,WA,YES,3.5,West
+San Francisco,CA,Nirvana,2.5,West
+Sacramento,CA,Jackson Browne,2.2,West
+Portland,OR,Steppenwolf,1.2,West
+Boston,MA,Allman Brothers,5.9,North-East
+Washington,DC,R.E.M,3.3,North-East
+Pittsburgh,PA,Neil young,3,North-East
+Newyok,NY,Billy Joel,2.6,North-East
+Philadelphia,PA,Rod Stewart,2.3,North-East
+Detroit,MI,J. Geils Band,3.1,Mid-West
+Kansas City,MO,Stevie Ray Vaughan,3,Mid-West
+St. Louis,MO,Metallica,2.6,Mid-West
+Chicago,IL,Bruce Springsteen,1.6,Mid-West
+Cincinnati,OH,Bryan Adams,1.5,Mid-West
+San Antonio,TX,Motley Crue,4.3,South
+Tampa Bay,FL,Reo Speedwagon,2.7,South
+Houston,TX,Paul McCartney/Wings,2.5,South
+Miami,FL,Billy Joel,1.8,South
+Charlotte,NC,Kiss,1.2,South

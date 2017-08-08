@@ -1,0 +1,238 @@
+<!doctype html>
+<html id="visdown" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Visdown - Markdown for Visualisation</title>
+    <meta name="description" content="Create Simple Visualisation Charts with Markdown">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="lib/vega.min.js"></script>
+    <script src="lib/vega-lite.min.js"></script>
+    <script src="lib/vega-embed.min.js"></script>
+    <script src="lib/marked.min.js"></script>
+    <script src="lib/yaml.min.js"></script>
+
+    <style>
+      #visdown-output {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      #visdown-input {
+        display: none;
+      }
+    </style>
+
+</head>
+<body>
+
+<div id="visdown-input">
+  theme: Work, 3
+
+  # [fit] **Data Visualisation**
+  ## Narratives & Dashboards
+  ##       
+  ##   
+  ## **Amit Kapoor**
+  ### [amitkaps.com](http://amitkaps.com)
+  ###   
+  ### NID, Bangalore
+
+
+  ---
+
+  # **Gameplan**
+  * Day 1: Grammar
+  * Day 2: Composition
+  * Day 3: Aesthetics
+  * Day 4: Interactions
+  * Day 5: Narratives & Exemplars
+
+  ---
+
+  # **Communication**
+
+  # Slack Channel
+  If you have questions, please raise them in Slack Channel: [amitkaps.slack.com](https://amitkaps.slack.com/)
+
+  # Material & Slides
+  All slides and material used in the class are available in the following dropbox folder: [https://goo.gl/QyR264](https://goo.gl/QyR264)
+
+  ---
+
+
+  # **Sharing work**
+  We will be using **GitHub** to share our work.
+  - Please create an account on github.com
+  - Clone the following repo: [https://github.com/amitkaps/visdown-template](https://github.com/amitkaps/visdown-template)
+  - Use this as the starting point to create your work.
+
+
+  ---
+
+  # **Data Layer**
+  **Types**
+  - *Categorical*: Nominal, Ordinal
+  - *Continuous*: Temporal, Quantiative
+
+  **Transformations**
+  - Tall <-> Wide
+  - Aggregation (Bins)
+  - Basic Stats (Min, Max, Average)
+  - New Variables - Geocoding
+  - Filtering, Refining
+
+  ---
+
+  # **Visual Layer**
+  - *Marks*: Points, Tick, Lines, Bar, Area, Glyphs, Polygon, ...
+  - *Channels*: Position, Size, Color, Shape, Path, ...
+  - *Position*: Identity, Stacked, Jitter, Dodge
+  - *Scale*: Linear, Log, Nominal, Color, Size
+  - *Coordinate*: Cartesian, Polar, Geographic, Parallel
+  - *Layout*: Single, Faceting, Layer, Repeat, Concat
+
+  ---
+
+  # **Annotation Layer**
+  - *Title* & *Labels*
+  - *Axis* and *Tick marks*
+  - *Legends*
+  - *Grids* and *Reference*
+  - *Text Annotation*
+  - *Story Elements*
+
+  ---
+
+  # **Interaction Layer**
+  - *Selection*: Discrete (single, multi), Continuous (interval), Voronoi (nearest), Remove (toggle)
+  - *Events*: `click`, `dblclick`, `mouseover`, `drag`,...
+  - *Condition*: Change encoding, scale, filter, ...
+  - *Bind*: Input elements (range, radio-box,...)
+  - *Project*: default, fields
+  - *Translate*: scale
+
+  ---
+
+  # **Visual Vocabulary**
+  - *Deviation*
+  - *Correlation*
+  - *Ranking*
+  - *Distribution*
+  - *Magnitude*
+  - *Part-to-Whole*
+  - *Change over time*
+  - *Spatial*
+  - *Flow*
+
+  ---
+
+  # **Interaction Patterns**
+
+  - **Select**: mark something as interesting
+  - **Explore**: show me something else
+  - **Encode**: show me a different representation
+  - **Abstract/Elaborate**: show me more or less detail
+  - **Filter**: show me something conditionally
+  - **Connect**: show me related items
+  - **Reconfigure**: show me a different arrangement
+  - **Transition**: move between different views
+
+  ---
+
+  # **Interaction Vocabulary**
+
+  - Select e.g. *Highlighting*
+  - Explore e.g. *Navigation like Pan, Zoom*
+  - Encode e.g. *Change Color, Position*
+  - Abstract/Elaborate e.g. *Overview & Details*
+  - Filter e.g. *Dynamic Queries*, *Cross Filter*
+  - Connect e.g. *Brushing & Linking*
+  - Reconfigure e.g. *Sorting*, *Indexing*
+  - Transition e.g. *Staging & Animation*
+
+  ---
+
+  # Visualisation Mantra
+
+  > "Overview first, zoom and filter, then details-on-demand."
+  > -- Ben Shneiderman
+
+  Reference: [The Surest Path to Visual Discovery by Stephen Few](http://www.b-eye-network.com/view/2674)
+
+  ---
+
+  # **Data Wrangling**
+  - **Excel**
+  - **Python** with `pandas`
+  - **Open Refine**: [openrefine.org](http://openrefine.org/)
+
+  ---
+
+  # **Visual Exploration**
+  - **Excel**
+  - **Tableau**: [public.tableau.com](https://public.tableau.com/s/)
+  - **Polestar**: [vega.github.io/polestar](https://vega.github.io/polestar/)
+  - **RawGraphs**: [rawgraphs.io](http://rawgraphs.io/)
+  - **Keshif**: [keshif.me](https://keshif.me/)
+  - **Facet**: [pair-code.github.io/facets](https://pair-code.github.io/facets/)
+
+  Reference: [Interactive Dynamics for Visual Analysis](http://queue.acm.org/detail.cfm?id=2146416)
+
+  ---
+
+  # **Interactive Visualisation Tools**
+  - GUI: **Tableau**
+  - Charting: **metricgraph.js**, **dc.js**, **Timeline Storyteller**
+  - Grammar: **Vega-lite**, **Vega**
+  - Code: **d3.js**
+  - Pixel: **p5.js**
+
+  ---
+
+  # **Authoring Tools**
+
+  - Markdown based
+      - **Visdown**: [visdown.com](http:visdown.com)
+      - **Idyll**: [idyll-lang.github.io](https://idyll-lang.github.io/)
+  - Embed Tableau creations
+  - Make in HTML + CSS + JS
+
+  ---
+
+  # Learning d3.js
+  - Book:
+      - [Interactive Data Visualisation for the Web by Scott Murray](http://chimera.labs.oreilly.com/books/1230000000345/)
+      - [D3 in Action by Elijah Meek](https://github.com/emeeks/d3_in_action_2)
+  - Courses:
+      - [Interactive Data Vis Course by Lynn Cherry](http://arnicas.github.io/interactive-vis-course/index.html)
+      - [D3.js and Data Visualisation by Udacity](https://in.udacity.com/course/data-visualization-and-d3js--ud507)
+
+  - Videos: [Dashing D3.js by Sebastian Gutters](http://www.dashingd3js.com/)
+
+
+  ---
+
+  # **Visual Representation Galleries**
+  - [A Tour through the Visualisation Zoo by Heer & Bostock](http://queue.acm.org/detail.cfm?id=1805128)
+  - [chartmaker.visualisingdata.com/](http://chartmaker.visualisingdata.com/)
+  - [http://christopheviau.com/d3list/gallery.html](http://christopheviau.com/d3list/gallery.html)
+  - [https://github.com/d3/d3/wiki/Gallery](https://github.com/d3/d3/wiki/Gallery)
+  - [https://gramener.com/imdb/#](https://gramener.com/imdb/#)
+
+  ----
+
+  # **Alternate Representation**
+
+  - Time-series: Horizon Chart, Steamgraph, Event Based Timelines
+  - Hierarchies: Treemap, Enclosures, Force-Directed, Arc Diagram, Matrix View
+  - Maps: Choropleth, Cartogram, Flow Maps, Dorling Cartogram
+
+
+</div>
+<div id="visdown-output"></div>
+
+<script src="visdown.js"></script>
+
+</body>
+</html>
